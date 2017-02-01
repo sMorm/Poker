@@ -25,11 +25,16 @@ using namespace std;
 ♦ U+2666 Black Diamond Suit
 ♧ U+2667 White Club Suit
 */
-
+/*
+  These string arrays will make it easier to differentiate each rank of our deck of cards. Especially with the faces.
+ */
 static string suitArray[4] = {"♣CLUBS♧", "♥HEARTS♡", "♦DIAMONDS♢", "♠SPADES♤"};
 static string faceArray[13] ={
     "2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King", "Ace"
 };
+/*
+  Our most basic object is 'Card'. Card will simply represent a card that has a face and a suit.
+ */
 class Card{
     //Allows deck to access Card
     friend class Deck;
@@ -37,8 +42,19 @@ private:
     int face;
     int suit;
 public:
+    /*
+      The card constructur takes two integers that will later on be used to represent
+      a face or a suit based on the two array we have set.
+     */
     Card(int face, int suit);
+    /*
+      The = operator for the card class allows us to assign cards directly and do a 
+      shallow copy.
+     */
     Card& operator=(const Card& arg);
+    /*
+      This function simply allows us to print the suit and face of the card given.
+     */
     string toString(Card card_);
     int getFace();
     int getSuit();
