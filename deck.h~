@@ -56,9 +56,6 @@ public:
       This function simply allows us to print the suit and face of the card given.
      */
     string toString(Card card_);
-    /*
-     Getter functions.
-     */
     int getFace();
     int getSuit();
 };
