@@ -16,12 +16,12 @@ finally a 'toString' function that uses the static array to returning a string t
 corresponds to the suit and faces integer value.
 
 #DeckOfCards
-	Consists of a vector of cards called 'deck' and also another vector of cards called
-	'usedCards' that will be used for a "smarter" implementation of drawing cards. Also,
-	there is an integer data member named 'currentCard' that keeps track of how many
-	cards are left in the deck for easier access.
+Consists of a vector of cards called 'deck' and also another vector of cards called
+'usedCards' that will be used for a "smarter" implementation of drawing cards. Also,
+there is an integer data member named 'currentCard' that keeps track of how many
+cards are left in the deck for easier access.
 
-	Public member fuctions consists of the constructor that will initialize 52 unique cards, getters, dealCard, moreCards, and finally a function that will shuffle the vector of cards.
+Public member fuctions consists of the constructor that will initialize 52 unique cards, getters, dealCard, moreCards, and finally a function that will shuffle the vector of cards.
 
 #Hand
 The hand class consists of two data members. The first is a vector of cards that will be used to hold each player's five cards. The other member is an array that will allow us to access what cards should be swapped in order for the dealer to have a better chance of getting a flush or a straight.
