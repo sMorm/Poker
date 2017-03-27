@@ -3,19 +3,22 @@ A poker game that uses data from the deck to better the user's chances of winnin
 
 This program consists of three main classes.
 
-#Main Classes 
-	Card
-	DeckOfCards
-	Hand
+<h2>Main</h2>
+<ul>
+	<li>Classes</li> 
+	<li>Card</li> 
+	<li>DeckOfCards</li> 
+	<li>Hand</li> 
+</ul>
 
-#Card  
+<h2>Card</h2>
 Consists of an integer hold to the face and suit of a card. There is a corresponding array that allows you to access the certain type of suit or faces.
 
 There are also 3 public member functions. Two getters for both data members, and
 finally a 'toString' function that uses the static array to returning a string that
 corresponds to the suit and faces integer value.
 
-#DeckOfCards
+<h2>DeckOfCards</h2>
 Consists of a vector of cards called 'deck' and also another vector of cards called
 'usedCards' that will be used for a "smarter" implementation of drawing cards. Also,
 there is an integer data member named 'currentCard' that keeps track of how many
@@ -23,7 +26,7 @@ cards are left in the deck for easier access.
 
 Public member fuctions consists of the constructor that will initialize 52 unique cards, getters, dealCard, moreCards, and finally a function that will shuffle the vector of cards.
 
-#Hand
+<h2>Card</h2>
 The hand class consists of two data members. The first is a vector of cards that will be used to hold each player's five cards. The other member is an array that will allow us to access what cards should be swapped in order for the dealer to have a better chance of getting a flush or a straight.
 Public member functions consists of many getters and setters. The most important functions has to be the sorting functions that makes it easier for us to decide that hand the player has.
 
